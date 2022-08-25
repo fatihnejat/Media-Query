@@ -1,0 +1,114 @@
+@import "theme.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: var(--ff-roboto);
+  background-color: var(--mavi-9);
+  color: var(--siyah);
+  margin: 1rem;
+}
+h1 {
+  background-color: var(--koyu-kirmizi);
+  width: 20rem;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 40px;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.header {
+  background-color: var(--koyu-yesil);
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  background-color: var(--gri-3);
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--beyaz);
+  padding: 1rem 1.5rem;
+}
+.navbar a:hover {
+  background-color: var(--gri-7);
+  color: var(--siyah);
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.col {
+  padding: 1rem;
+}
+
+.fs {
+  width: 35%;
+  background-color: var(--gri-5);
+}
+
+.aws {
+  width: 20%;
+  background-color: var(--gri-6);
+}
+
+.data {
+  width: 30%;
+  background-color: var(--gri-7);
+}
+
+.cms {
+  width: 15%;
+  background-color: var(--gri-8);
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  body {
+    color: var(--beyaz);
+    background-color: var(--acik-kirmizi);
+  }
+
+  .col {
+    width: 50%;
+    margin: 0.5rem 0rem;
+  }
+  .navbar {
+    margin-bottom: 0.3rem;
+  }
+  .col:hover {
+    background-color: beige;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  body {
+    background-color: var(--mor);
+    color: var(--beyaz);
+  }
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .col {
+    width: 100%;
+    margin: 0.2rem;
+  }
+  .col:hover {
+    background-color: darkkhaki;
+    color: black;
+  }
+
+  .header {
+    display: none;
+  }
+}
